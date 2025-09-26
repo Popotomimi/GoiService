@@ -1,6 +1,19 @@
+import { Button } from "@/components/ui/button";
+import { ArrowLeft } from "lucide-react";
+import Link from "next/link";
+
 const TermosDeUso = () => {
   return (
     <section className="w-full px-4 my-11 py-12 max-w-4xl mx-auto text-white">
+      <Button asChild>
+        <Link
+          href="/"
+          className="flex gap-2 items-start mb-9 bg-rose-600 hover:bg-rose-700 text-white shadow-lg shadow-rose-600/30 transition">
+          <ArrowLeft />
+          Voltar
+        </Link>
+      </Button>
+
       <h1 className="text-3xl font-bold mb-6">Termos de Uso</h1>
       <div className="space-y-6 text-zinc-300 text-base leading-relaxed">
         <p>
